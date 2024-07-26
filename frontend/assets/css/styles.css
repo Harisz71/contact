@@ -1,3 +1,76 @@
-body{
-    background: rgb(173, 173, 173)
+*
+{
+  box-sizing: border-box;
 }
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+#homepage {
+  background-image: url(../images/backgroundimg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display:flex;
+  flex-direction: column;
+}
+
+#homepage #header {
+  height: 70px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+#logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+#homepage #header #nav{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+
+#homepage #header #nav a
+{
+  color: #fff;
+  text-decoration: none;
+}
+
+#homepage #header #nav a:hover
+{
+  color: red;
+}
+
+#content
+{
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding-right: 80px;
+}
+#content #banner{
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#content #banner img{
+  max-width: 100%;
+}
+#content #banner p{
+  color: red;
+  font-size: 26px;
+  text-align: right;
+}
+
+
+
