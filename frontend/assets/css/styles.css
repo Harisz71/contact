@@ -73,7 +73,7 @@ body {
 }
 
 
-#loginDialogue{
+.dialogue{
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
@@ -86,11 +86,11 @@ body {
   font-size: 26px;
 }
 
-#loginDialogue.active{
+.dialogue.active{
   display:flex;
 }
 
-#loginDialogue #dialoguecontent
+.dialogue #dialoguecontent
 {
   width: 30%;
   min-height: 100px;
@@ -98,19 +98,19 @@ body {
   border-radius: 4px;
   padding-left: 20px;
 }
-#loginDialogue #dialoguecontent form
+.dialogue #dialoguecontent form
 {
   display: flex;
   flex-direction: column;
   margin: 5px;
 }
 
-#loginDialogue #dialoguecontent h1{
+.dialogue #dialoguecontent h1{
   color: black;
   font-size: medium;
   font-weight: bolder;
 }
-#loginDialogue #dialoguecontent input{
+.dialogue #dialoguecontent input{
   margin-bottom: 20px;
   padding-left: 10px;
   height: 30px;
@@ -119,7 +119,7 @@ body {
   border-radius: 5px;
   margin-right: 10px;
 }
-#loginDialogue #dialoguecontent form #action
+.dialogue #dialoguecontent form #action
 {
   display: flex;
   margin: 5px;
@@ -127,7 +127,7 @@ body {
   justify-content: flex-end;
 }
 
-#loginDialogue #dialoguecontent form button[type="submit"]
+.dialogue #dialoguecontent form button[type="submit"]
 {
   height: 30px;
   width: 60px;
@@ -140,12 +140,12 @@ body {
   cursor: pointer;
 }
 
-#loginDialogue #dialoguecontent form button[type="submit"]:hover{
+.dialogue #dialoguecontent form button[type="submit"]:hover{
   color: #fff;
   background-color: rgb(56, 56, 253);
 }
 
-#loginDialogue #dialoguecontent form button#cancelbtn
+.dialogue #dialoguecontent form button.cancelbtn
 {
   height: 30px;
   width: 60px;
@@ -157,7 +157,7 @@ body {
   background-color: rgb(255, 255, 255);
   cursor: pointer;
 }
-#loginDialogue #dialoguecontent form button#cancelbtn:hover{
+.dialogue #dialoguecontent form button.cancelbtn:hover{
     color: black;
   background-color: rgb(213, 213, 215);
 }

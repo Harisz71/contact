@@ -14,7 +14,7 @@
           <div class="text">Connect Client</div>
         </div>
         <div id="nav">
-          <a href="#" id="mainloginpage" > Login </a> | <a href="#"> Register </a>
+          <a href="#" id="mainloginpage" > Login </a> | <a id="mainregisterbtn" href="#"> Register </a>
         </div>
       </div>
       <div id="content">
@@ -26,19 +26,33 @@
         </div>
       </div>
     </div>
-    <div id="loginDialogue">
+    <div id="loginDialogue" class="dialogue">
       <div id="dialoguecontent">
         <h1>Login</h1>
         <form action="javascipt:void(0);">
           <input type="email" placeholder="Email" required />
           <input type="password" placeholder="Password" required/>
           <div id="action">
-            <button id="cancelbtn">Cancel</button>
+            <button class="cancelbtn">Cancel</button>
             <button type="submit">Submit</button>
           </div>
         </form>
       </div>
     </div> 
+        <div id="registerDialogue" class="dialogue">
+      <div id="dialoguecontent">
+        <h1>Register</h1>
+        <form action="javascipt:void(0);">
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required/>
+          <div id="action">
+            <button class="cancelbtn">Cancel</button>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div> 
+    
   </body>
     <script src="./frontend/assets/js/script.js"></script>
 
