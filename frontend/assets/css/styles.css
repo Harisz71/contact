@@ -145,6 +145,12 @@ body {
   background-color: rgb(56, 56, 253);
 }
 
+.dialogue #dialoguecontent form button[disabled][type="submit"]
+{
+    background-color: rgb(121, 121, 237);
+    cursor: not-allowed;
+}
+
 .dialogue #dialoguecontent form button.cancelbtn
 {
   height: 30px;

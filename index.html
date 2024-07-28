@@ -14,7 +14,8 @@
           <div class="text">Connect Client</div>
         </div>
         <div id="nav">
-          <a href="#" id="mainloginpage" > Login </a> | <a id="mainregisterbtn" href="#"> Register </a>
+          <a href="#" id="mainloginpage"> Login </a> |
+          <a id="mainregisterbtn" href="#"> Register </a>
         </div>
       </div>
       <div id="content">
@@ -29,32 +30,31 @@
     <div id="loginDialogue" class="dialogue">
       <div id="dialoguecontent">
         <h1>Login</h1>
-        <form action="javascipt:void(0);">
+        <form action="javascipt:void(0);" onkeyup="formchange()">
           <input type="email" placeholder="Email" required />
-          <input type="password" placeholder="Password" required/>
+          <input type="password" placeholder="Password" required />
           <div id="action">
             <button class="cancelbtn">Cancel</button>
-            <button type="submit">Submit</button>
+            <button disabled type="submit">Login</button>
           </div>
         </form>
       </div>
-    </div> 
-        <div id="registerDialogue" class="dialogue">
+    </div>
+    <div id="registerDialogue" class="dialogue">
       <div id="dialoguecontent">
         <h1>Register</h1>
-        <form action="javascipt:void(0);">
+        <form action="javascipt:void(0);" onkeyup="formchange()">
           <input type="email" placeholder="Email" required />
-          <input type="password" placeholder="Password" required/>
+          <input type="password" placeholder="Password" required />
           <div id="action">
             <button class="cancelbtn">Cancel</button>
-            <button type="submit">Submit</button>
+            <button disabled type="submit">Register</button>
           </div>
         </form>
       </div>
-    </div> 
-    
+    </div>
   </body>
-    <script src="./frontend/assets/js/script.js"></script>
+  <script src="./frontend/assets/js/script.js"></script>
 
   <footer></footer>
 </html>
