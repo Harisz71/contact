@@ -1,5 +1,5 @@
 function injectlogindialoge() {
-  fetch("frontend/component/login.component.html")
+  fetch("component/login.component.html")
     .then((r) => {
       return r.text();
     })

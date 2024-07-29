@@ -1,5 +1,5 @@
 function injectregisterdialogue() {
-  fetch("frontend/component/register.component.html")
+  fetch("component/register.component.html")
     .then((r) => {
       return r.text();
     })
