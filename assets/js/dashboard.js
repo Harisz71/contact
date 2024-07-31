@@ -14,3 +14,14 @@ function removeboxcontent() {
     .querySelector("#searchbox #inputcontainer .cross")
     .classList.remove("active");
 }
+function injectheader()
+{
+  fetch('../component/dashboard/header.component.html').then((r)=>
+  {
+    return r.text();
+  }).then((container)=>
+  {
+    document.querySelector('#head').innerHTML= container; 
+  });
+}
+injectheader();
