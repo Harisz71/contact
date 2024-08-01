@@ -1,7 +1,9 @@
+@import url(./sidebar.css);
+@import url(./header.css);
 body {
   margin: 0%;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
 }
 #dashboardpage {
   width: 100%;
@@ -10,117 +12,17 @@ body {
   flex-direction: column;
   background-color: white;
 }
-#dashboardpage #head {
-  height: 68px;
-  display: flex;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: #f7fafc;
-}
-#dashboardpage #head #logosection {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  flex-basis: 240px;
-}
 
-#dashboardpage #head #searchbox {
-  flex-grow: 1;
-  margin-top: 16px;
-  position: relative;
-}
-#dashboardpage #head #searchbox input {
-  border: 1px solid #cfcccc;
-  width: 60%;
-  height: 40px;
-  border-radius: 7px 7px 0px 0px;
-  outline: none;
-  background-color: #f0f3f4;
-  padding-left: 40px;
-}
-#dashboardpage #head #searchbox img {
-  position: absolute;
-  width: 14px;
-  top: -12px;
-  left: 11px;
-  margin: auto;
-  bottom: 0px;
-  cursor: pointer;
-}
-#dashboardpage #head #searchbox img.cross {
-  right: -211px;
-  width: 20px;
-  display: none;
-}
-
-#dashboardpage #head #searchbox img.cross.active {
-  display: block;
-}
-#dashboardpage #head #actionsection {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  gap: 30px;
-}
-/* #dashboardpage #head #actionsection #action{
-  width: 50%;
-  display: flex;
-  gap: 30px;
-  cursor: pointer;
-  
-} */
-#dashboardpage #head #actionsection #profile {
-  flex-grow: 1;
-  display: flex;
-  cursor: pointer;
-}
 
 #dashboardpage #contentcontainer {
   flex-grow: 1;
   display: flex;
 }
-#dashboardpage #contentcontainer #sidebar {
-  width: 20%;
-  height: 100%;
-  margin-top: 0px;
-  display: flex;
-  flex-direction: column;
-  background-color: #f7fafc;
-}
-
-#dashboardpage #contentcontainer #sidebar #contactbutton button {
-  width: 65%;
-  background-color: #c2e7ff;
-  display: flex;
-  margin-left: 15px;
-  height: 55px;
-  align-items: center;
-  margin-top: 10px;
-  font-size: medium;
-  outline: none;
-  border: 0px solid black;
-  border-radius: 10px;
-  cursor: pointer;
-  gap: 7px;
-  padding-left: 8px;
-}
-#dashboardpage #contentcontainer #sidebar #contactbutton button:hover {
-  background-color: #aedbf9;
-  box-shadow: 0px 0px 10px 3px rgba(79, 78, 78, 0.2);
-}
-#dashboardpage #contentcontainer #sidebar #menu {
-  font-size: medium;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  margin-left: 40px;
-  gap: 20px;
-}
-#dashboardpage #contentcontainer #sidebar #menu .menuitems {
-  cursor: pointer;
-}
 #dashboardpage #contentcontainer #content {
   flex-grow: 1;
-  border: 1px solid orange;
+  border-radius: 20px;
+  
+  
+
 }
+

@@ -25,3 +25,13 @@ function injectheader()
   });
 }
 injectheader();
+function injectsidebar() {
+  fetch("../component/dashboard/sidebar.html")
+    .then((r) => {
+      return r.text();
+    })
+    .then((container) => {
+      document.querySelector("#sidebar").innerHTML = container;
+    });
+}
+injectsidebar();
