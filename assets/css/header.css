@@ -1,5 +1,5 @@
 #dashboardpage #head {
-  height: 68px;
+  height: 60px;
   display: flex;
   padding-left: 20px;
   padding-right: 20px;
@@ -13,9 +13,9 @@
 }
 
 #dashboardpage #head #searchbox {
-  flex-grow: 1;
   margin-top: 16px;
   position: relative;
+  width: 80%;
 }
 #dashboardpage #head #searchbox input {
   border: 1px solid #cfcccc;
@@ -25,11 +25,16 @@
   outline: none;
   background-color: #f0f3f4;
   padding-left: 40px;
+
+  &:focus {
+    background-color: #f7fafc;
+    box-shadow: 0px 0px 5px #cfcccc;
+  }
 }
 #dashboardpage #head #searchbox img {
   position: absolute;
   width: 14px;
-  top: -12px;
+  top: -3px;
   left: 11px;
   margin: auto;
   bottom: 0px;
@@ -44,12 +49,54 @@
 #dashboardpage #head #searchbox img.cross.active {
   display: block;
 }
+#dashboardpage #head #searchbox .suggestions {
+  border: 1px solid rgb(178, 178, 178);
+  width: 64.5%;
+  min-height: 90px;
+  position: absolute;
+  box-shadow: 2px 2px 5px #cfcccc;
+  box-sizing: border-box;
+  display: none;
+}
+#dashboardpage #head #searchbox .suggestions.active
+{
+  display: block;
+} 
+#dashboardpage #head #searchbox .suggestions .suggestion {
+  display: flex;
+  gap: 20px;
+  padding: 10px 10px;
+  font-size: 12px;
+  height: fit-content;
+  align-items: center;
+  color: rgb(0, 0, 0);
+}
+#dashboardpage #head #searchbox .suggestions .suggestion:hover {
+  background-color: #f0f3f4;
+  cursor: pointer;
+}
+#dashboardpage #head #searchbox .suggestions .suggestion .email {
+  font-size: 11px;
+  color: #aca8a8;
+}
+#dashboardpage #head #searchbox .suggestions .suggestion .avatar {
+  background-color: red;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f7fafc;
+  outline: #aca8a8;
+}
 #dashboardpage #head #actionsection {
   display: flex;
   align-items: center;
   justify-content: right;
   gap: 30px;
 }
+
 /* #dashboardpage #head #actionsection #action{
   width: 50%;
   display: flex;
