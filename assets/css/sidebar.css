@@ -30,19 +30,26 @@
 #dashboardpage #contentcontainer #sidebar #menu {
   padding-top: 40px;
   width: 100%;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   gap: 10px;
 }
 #dashboardpage #contentcontainer #sidebar #menu .link {
   text-decoration: none;
   color: black;
-  display: block;
   padding: 10px 0px;
   padding-left: 30px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+#dashboardpage #contentcontainer #sidebar #menu .link a{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
 }
 #dashboardpage #contentcontainer #sidebar #menu .link:hover {
   background-color: rgba(220, 218, 218, 0.646);
@@ -51,6 +58,12 @@
     background-color: #c2e7ff;
     color: #1967d2;
 }
-#dashboardpage #contentcontainer #sidebar #menu .link.fa {
-  gap: 20px;
+#dashboardpage #contentcontainer #sidebar #menu .link img {
+margin-right: 10px;  width: 17px;
+
+}
+#dashboardpage #contentcontainer #sidebar #menu .link #counter{
+  font-size: small;
+  margin-top: 6px;
+  padding-left: 40px;
 }
